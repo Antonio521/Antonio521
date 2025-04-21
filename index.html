@@ -53,7 +53,7 @@
             color: #e6f1ff;
         }
 
-        .bg-gray-800 {
+       .bg-gray-800 {
             background-color: #112240;
         }
 
@@ -83,29 +83,12 @@
             transform: scale(1.1);
         }
 
-       .grid-container {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 2rem;
-        }
-
        .section-title {
-            grid-column: 1 / -1;
             text-align: center;
         }
 
-        @media (max-width: 768px) {
-           .grid-container {
-                grid-template-columns: 1fr;
-            }
-        }
-
        .basic-info {
-            grid-column: 1 / -1;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 2rem;
-            align-items: center;
+            text-align: center;
         }
 
        .basic-info-img {
@@ -126,7 +109,7 @@
     <main class="container mx-auto p-8">
         <div class="basic-info animate-fadeIn">
             <div class="basic-info-img">
-                <img src="https://example.com/头像.jpg" alt="个人头像" class="rounded-full border-4 border-[#64ffda]" style="width: 200px; height: 200px;">
+                <img src="https://github.com/Antonio521/Antonio521/blob/main/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20250421141407.jpg" alt="个人头像" class="rounded-full border-4 border-[#64ffda]" style="width: 200px; height: 200px;">
             </div>
             <div class="basic-info-text">
                 <h2 class="text-3xl font-bold mb-4">基本信息</h2>
@@ -138,13 +121,14 @@
                 <p class="mb-8">个人特色：熟练掌握 Python、Matlab、C、C++ 编程，熟悉 3DGS、SLAM、扩散模型等技术，具备无人机系统设计与协同控制项目经验。</p>
             </div>
         </div>
-        <div class="grid-container">
+        <div>
             <h2 class="section-title text-3xl font-bold mb-8 animate-fadeIn">教育经历</h2>
             <div class="bg-gray-800 p-6 rounded-lg shadow-md animate-fadeIn">
                 <h3 class="text-2xl font-bold mb-2">上海交通大学</h3>
-                <p class="text-lg mb-2">电子信息与电气工程学院/控制工程专业 | 在读研二</p>
+                <p class="text-lg mb-2">电子信息与电气工程学院/电子信息专业 | 在读研二</p>
                 <p class="text-lg mb-2">2023.09-2026.03 | GPA: 3.7/4.0</p>
                 <p class="text-gray-300">研究方向：SLAM、3DGS、具身智能、WM。</p>
+                 <p class="text-gray-300">荣誉奖励：尚郡奖学金</p>
             </div>
             <div class="bg-gray-800 p-6 rounded-lg shadow-md animate-fadeIn">
                 <h3 class="text-2xl font-bold mb-2">厦门大学</h3>
@@ -157,44 +141,44 @@
             <div class="bg-gray-800 p-6 rounded-lg shadow-md animate-fadeIn">
                 <h3 class="text-2xl font-bold mb-2">ROBOMASTER 机甲大师超级对抗赛</h3>
                 <p class="text-lg mb-2">国家级 | 二等奖</p>
-                <p class="text-gray-300">赛事简介：全国性机器人竞技赛事，专注于机器人研发与对抗。</p>
+                <p class="text-gray-300">全国性机器人竞技赛事，专注于机器人研发与对抗。</p>
             </div>
             <div class="bg-gray-800 p-6 rounded-lg shadow-md animate-fadeIn">
                 <h3 class="text-2xl font-bold mb-2">MCM/ICM 大学生数学建模竞赛</h3>
                 <p class="text-lg mb-2">国家级 | 二等奖/一等奖</p>
-                <p class="text-gray-300">赛事简介：国际级数学建模竞赛，培养数据分析与建模能力。</p>
+                <p class="text-gray-300">国际级数学建模竞赛，培养数据分析与建模能力。</p>
             </div>
             <div class="bg-gray-800 p-6 rounded-lg shadow-md animate-fadeIn">
                 <h3 class="text-2xl font-bold mb-2">"挑战杯"揭榜挂帅专项赛</h3>
                 <p class="text-lg mb-2">国家级 | 一等奖</p>
-                <p class="text-gray-300">赛事简介：全国大学生课外学术科技竞赛专项赛，聚焦科技攻关与创新。</p>
+                <p class="text-gray-300">全国大学生课外学术科技竞赛专项赛，聚焦科技攻关与创新。</p>
             </div>
             <h2 class="section-title text-3xl font-bold mb-8 animate-fadeIn">科研经历</h2>
             <div class="bg-gray-800 p-6 rounded-lg shadow-md animate-fadeIn">
                 <h3 class="text-2xl font-bold mb-2">A Novelty Spectral Relaxation Embedding for Unsupervised Feature Selection</h3>
                 <p class="text-lg mb-2">第二作者 | 针对图像数据集的无监督特征选择算法</p>
-                <p class="text-gray-300">项目描述：引入谱松弛嵌入，构建新的优化目标，实现图像降维与判别信息保留。</p>
+                <p class="text-gray-300">创新点：引入谱松弛嵌入，构建新的优化目标，实现图像降维与判别信息保留。</p>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg shadow-md animate-fadeIn">
+                <h3 class="text-2xl font-bold mb-2">MotionGS: Compact Gaussian Splatting SLAM by Motion Filter</h3>
+                <p class="text-lg mb-2">第一作者 | 鲁棒的3DGS-SLAM</p>
+                <p class="text-gray-300">创新点：在MonoGS框架下设计光流估计关键帧选择策略，加入二值掩膜控制高斯椭球数目，实现SOTA定位与建图效果。</p>
             </div>
             <h2 class="section-title text-3xl font-bold mb-8 animate-fadeIn">项目经历</h2>
             <div class="bg-gray-800 p-6 rounded-lg shadow-md animate-fadeIn">
-                <h3 class="text-2xl font-bold mb-2">MotionGS: Compact Gaussian Splatting SLAM by Motion Filter</h3>
-                <p class="text-lg mb-2">第一作者 | 2023.09-至今</p>
-                <p class="text-gray-300">项目描述：在MonoGS框架下设计光流估计关键帧选择策略，加入二值掩膜控制高斯椭球数目，实现SOTA定位与建图效果。</p>
-            </div>
-            <div class="bg-gray-800 p-6 rounded-lg shadow-md animate-fadeIn">
                 <h3 class="text-2xl font-bold mb-2">自主无人机与无人艇协同系统</h3>
-                <p class="text-lg mb-2">核心成员 | 2022.03-2023.06</p>
+                <p class="text-lg mb-2">核心成员 | 2023.07-2023.10</p>
                 <p class="text-gray-300">负责内容：1. 无人机三维模型设计与制造；2. ROS系统中运动控制、视觉识别与自主降落；3. 机艇协同多传感器梯次定位模块；4. 实物检验。</p>
             </div>
             <h2 class="section-title text-3xl font-bold mb-8 animate-fadeIn">实习经历</h2>
             <div class="bg-gray-800 p-6 rounded-lg shadow-md animate-fadeIn">
                 <h3 class="text-2xl font-bold mb-2">地平线 | AIGC/3DGS实习生</h3>
-                <p class="text-lg mb-2">2024.01-2024.08</p>
+                <p class="text-lg mb-2">2024.06-2024.08</p>
                 <p class="text-gray-300">负责内容：1. 基于位姿的条件扩散模型（SVD）设计，应用于新视角生成；2. 3DGS框架中高斯场景子模块优化与训练；3. 扩散模型与3DGS优化框架结合落地。</p>
             </div>
             <div class="bg-gray-800 p-6 rounded-lg shadow-md animate-fadeIn">
                 <h3 class="text-2xl font-bold mb-2">海康威视 | 算法实习生</h3>
-                <p class="text-lg mb-2">2023.07-2023.09</p>
+                <p class="text-lg mb-2">2024.10-2025.01</p>
                 <p class="text-gray-300">负责内容：1. 基于inpainting的工业缺陷样本生成；2. 图片/视频生成模型（FLUX、SD3、CogVideoX等）本地部署与业务测试。</p>
             </div>
             <h2 class="section-title text-3xl font-bold mb-8 animate-fadeIn">技能与工具</h2>
@@ -202,7 +186,7 @@
                 <p class="text-lg mb-2">编程语言：Python、Matlab、C、C++</p>
                 <p class="text-lg mb-2">开发工具：Git、Docker、Diffusers</p>
                 <p class="text-lg mb-2">三维建模：SolidWorks、CAD</p>
-                <p class="text-gray-300">理论知识：3DGS、SLAM、扩散模型、机器学习、计算机视觉。</p>
+                <p class="text-gray-300">理论知识：3DGS、SLAM、diffusion、PPO、机器学习、计算机视觉。</p>
             </div>
         </div>
     </main>
@@ -212,3 +196,4 @@
 </body>
 
 </html>
+    
